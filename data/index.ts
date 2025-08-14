@@ -1,7 +1,7 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Experience", link: "#experience" },
   { name: "Contact", link: "#contact" },
 ];
 
@@ -205,13 +205,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/iransamarasekara",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://twitter.com/iransamarasekara",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/iran-samarasekara-6abb782bb",
   },
 ];

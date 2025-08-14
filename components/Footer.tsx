@@ -1,3 +1,5 @@
+'use client'
+
 import React from 'react'
 import MagicButton from './ui/MagicButton'
 import { FaLocationArrow } from 'react-icons/fa6'
@@ -14,7 +16,7 @@ const Footer = () => {
             <p className='text-white-200 md:mt-10 my-5 text-center'>
                 Reach out to me today and let&apos;s discuss how I can help you achieve your goals.
             </p>
-            <a href='mailto:iransamarasekara@gmail.com'>
+            <a href='mailto:iran.22@cse.mrt.ac.lk'>
                 <MagicButton
                     title="let's get in touch"
                     icon={<FaLocationArrow/>}
@@ -28,8 +30,9 @@ const Footer = () => {
 
             <div className='flex item-center md:gap-3 gap-6'>
                 {socialMedia.map((profile) => (
-                    <div key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
+                    <div onClick={() => window.open(profile.link, '_blank')} key={profile.id} className='w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300'>
                         <img src={profile.img}
+                        alt={`${profile.id} social media icon`}
                         width={20} height={20} />
                     </div>
                 ))}
